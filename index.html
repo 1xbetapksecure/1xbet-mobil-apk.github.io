@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1xBet - Plateforme de Paris #1 Mondiale | Bonus 500 FCFA Gratuit</title>
-    <meta name="description" content="1xBet: La plateforme de paris leader mondiale. Télécharge l'app officielle, obtiens 500 FCFA gratuit + 500% bonus. Sécurisé, rapide, fiable. 195+ pays.">
-    <meta name="keywords" content="1xbet, application paris, bonus sans depot, plateforme paris mondiale, telecharger 1xbet app, paris sportifs, casino en ligne">
+    <title>1xBet - Bonus 500 FCFA GRATUIT + 500% - Inscription Rapide</title>
+    <meta name="description" content="🎁 Obtiens 500 FCFA GRATUIT sans dépôt + Bonus 500% en créant ton compte 1xBet. Code promo: 1x_4244948. Valable partout dans le monde. Offre limitée!">
+    <meta name="keywords" content="1xbet bonus, 500 fcfa gratuit, code promo 1xbet, bonus sans depot, 1xbet international, telecharger 1xbet">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="1xBet - Plateforme de Paris #1 Mondiale">
-    <meta property="og:description" content="Télécharge l'app 1xBet officielle. 500 FCFA gratuit + 500% bonus. Sécurisé & fiable.">
+    <meta property="og:title" content="1xBet - 500 FCFA GRATUIT + Bonus 500%">
+    <meta property="og:description" content="Crée ton compte avec 1x_4244948 et reçois 500 FCFA gratuit + 500% de bonus. Offre limitée!">
     <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10">
+    <meta property="og:url" content="https://tonsite.com">
     <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="1xBet - 500 FCFA GRATUIT">
+    <meta name="twitter:description" content="Code promo: 1x_4244948 - 500 FCFA sans dépôt + 500% bonus">
+    <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231E40AF' width='100' height='100'/><text x='50' y='65' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>1x</text></svg>">
@@ -40,11 +47,6 @@
             --light: #F8FAFC;
             --success: #10B981;
             --warning: #EF4444;
-            --gray: #64748B;
-        }
-
-        html {
-            scroll-behavior: smooth;
         }
 
         body {
@@ -64,20 +66,29 @@
             font-weight: 600;
             animation: pulse-banner 1s infinite;
             position: relative;
-            z-index: 1001;
+            overflow: hidden;
+        }
+
+        .countdown-banner::before {
+            content: "⚡ OFFRE LIMITÉE ⚡";
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
         }
 
         .countdown-timer {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            font-weight: bold;
             letter-spacing: 1px;
         }
 
         @keyframes pulse-banner {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.85; }
+            50% { opacity: 0.8; }
         }
 
-        /* ===== HEADER/NAVIGATION ===== */
+        /* ===== HEADER ===== */
         header {
             background: rgba(15, 23, 42, 0.98);
             backdrop-filter: blur(10px);
@@ -90,7 +101,7 @@
         }
 
         .header-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -103,20 +114,14 @@
             color: white;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
+            gap: 0.5rem;
         }
 
         .logo-icon {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             background: linear-gradient(135deg, #DC2626, #F59E0B);
-            border-radius: 10px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -124,86 +129,11 @@
             color: white;
             animation: pulse 2s infinite;
             box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
-            font-size: 1.3rem;
         }
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-
-        /* ===== NAVIGATION MENU ===== */
-        nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: #E2E8F0;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            font-size: 0.95rem;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #F59E0B, #DC2626);
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        nav a:hover {
-            color: #F59E0B;
-        }
-
-        .nav-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background: rgba(15, 23, 42, 0.95);
-            min-width: 250px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-            z-index: 1;
-            border-radius: 10px;
-            border: 1px solid rgba(245, 158, 11, 0.3);
-            top: 100%;
-            left: 0;
-            margin-top: 0.5rem;
-            backdrop-filter: blur(10px);
-        }
-
-        .dropdown-content a {
-            color: #E2E8F0;
-            padding: 1rem 1.5rem;
-            text-decoration: none;
-            display: block;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .dropdown-content a:hover {
-            background: rgba(245, 158, 11, 0.1);
-            padding-left: 2rem;
-            color: #F59E0B;
-        }
-
-        .nav-dropdown:hover .dropdown-content {
-            display: block;
+            50% { transform: scale(1.08); }
         }
 
         .badge-secure {
@@ -225,18 +155,18 @@
 
         /* ===== HERO SECTION ===== */
         .hero {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 4rem 2rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
             align-items: center;
-            min-height: 85vh;
+            min-height: 80vh;
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem;
             color: white;
             margin-bottom: 1.5rem;
             line-height: 1.2;
@@ -268,15 +198,8 @@
             }
         }
 
-        .hero-subtitle {
-            font-size: 1.2rem;
-            color: #E2E8F0;
-            margin-bottom: 1.5rem;
-            animation: slideInLeft 0.8s ease-out 0.1s both;
-        }
-
         .hero-content p {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             color: #E2E8F0;
             margin-bottom: 2rem;
             animation: slideInLeft 0.8s ease-out 0.2s both;
@@ -313,10 +236,16 @@
         .bonus-highlight h2 {
             color: #EF4444;
             font-size: 1.8rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .bonus-highlight p {
+            color: #E2E8F0;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .bonus-highlight .bonus-item {
@@ -332,20 +261,40 @@
             content: "✓";
             color: #10B981;
             font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .bonus-box {
+            background: linear-gradient(135deg, rgba(220, 38, 38, 0.1), rgba(245, 158, 11, 0.1));
+            border: 2px solid rgba(245, 158, 11, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            animation: slideInLeft 0.8s ease-out 0.4s both;
+        }
+
+        .bonus-box h3 {
+            color: #F59E0B;
             font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bonus-box p {
+            color: #E2E8F0;
+            font-size: 0.95rem;
         }
 
         .cta-buttons {
             display: flex;
-            gap: 1.2rem;
+            gap: 1rem;
             flex-wrap: wrap;
-            animation: slideInLeft 0.8s ease-out 0.5s both;
+            animation: slideInLeft 0.8s ease-out 0.6s both;
         }
 
         .btn {
-            padding: 1.2rem 2.5rem;
+            padding: 1.1rem 2.2rem;
             border: none;
-            border-radius: 12px;
+            border-radius: 10px;
             font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
@@ -353,14 +302,14 @@
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             letter-spacing: 0.5px;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #DC2626, #991B1B);
             color: white;
-            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.5);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.5);
             position: relative;
             overflow: hidden;
         }
@@ -381,8 +330,12 @@
         }
 
         .btn-primary:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 18px 50px rgba(220, 38, 38, 0.8);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(220, 38, 38, 0.7);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px);
         }
 
         .btn-secondary {
@@ -394,7 +347,15 @@
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.2);
             border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
+        }
+
+        .btn-icon::before {
+            content: "📱";
+        }
+
+        .btn-share::before {
+            content: "📤";
         }
 
         /* ===== HERO IMAGE ===== */
@@ -419,19 +380,19 @@
 
         .phone-mockup {
             position: relative;
-            width: 300px;
-            height: 600px;
+            width: 280px;
+            height: 560px;
             background: linear-gradient(135deg, #1E40AF, #3B82F6);
-            border-radius: 45px;
-            padding: 14px;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
-            border: 10px solid #000;
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+            border: 8px solid #000;
             animation: float 3s ease-in-out infinite;
         }
 
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+            50% { transform: translateY(-15px); }
         }
 
         .phone-mockup::before {
@@ -440,10 +401,10 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 160px;
-            height: 28px;
+            width: 150px;
+            height: 25px;
             background: #000;
-            border-radius: 0 0 28px 28px;
+            border-radius: 0 0 25px 25px;
             z-index: 10;
         }
 
@@ -451,12 +412,13 @@
             width: 100%;
             height: 100%;
             background: white;
-            border-radius: 40px;
+            border-radius: 35px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 1rem;
         }
 
         .phone-screen img {
@@ -465,355 +427,24 @@
             object-fit: cover;
         }
 
-        .app-badge {
+        .version-badge {
             position: absolute;
-            top: 25px;
-            right: 25px;
+            top: 20px;
+            right: 20px;
             background: linear-gradient(135deg, #10B981, #059669);
             color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 30px;
-            font-size: 0.85rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.8rem;
             font-weight: 700;
             z-index: 5;
             animation: bounce 2s infinite;
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
         }
 
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
-
-        /* ===== INSTALLATION GUIDE ===== */
-        .installation-guide {
-            max-width: 1400px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(220, 38, 38, 0.05));
-            border-radius: 20px;
-            padding: 4rem 2rem;
-            border: 2px solid rgba(245, 158, 11, 0.2);
-        }
-
-        .section-title {
-            text-align: center;
-            color: white;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: #E2E8F0;
-            font-size: 1.1rem;
-            margin-bottom: 3rem;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .step-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border: 1.5px solid rgba(245, 158, 11, 0.3);
-            border-radius: 16px;
-            padding: 2.5rem;
-            transition: all 0.4s ease;
-            backdrop-filter: blur(10px);
-            position: relative;
-            overflow: hidden;
-            counter-increment: step-counter;
-        }
-
-        .step-card::before {
-            content: counter(step-counter);
-            position: absolute;
-            top: -15px;
-            right: -15px;
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #F59E0B, #DC2626);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: white;
-            opacity: 0.2;
-        }
-
-        .step-card:hover {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-            border-color: rgba(245, 158, 11, 0.6);
-            transform: translateY(-12px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-        }
-
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #F59E0B, #DC2626);
-            border-radius: 50%;
-            color: white;
-            font-weight: bold;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .step-card h3 {
-            color: #F59E0B;
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .step-card p {
-            color: #E2E8F0;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* ===== STATISTICS SECTION ===== */
-        .statistics {
-            max-width: 1400px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border: 1.5px solid rgba(245, 158, 11, 0.3);
-            border-radius: 16px;
-            padding: 2.5rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .stat-card:hover {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-            border-color: rgba(245, 158, 11, 0.6);
-            transform: translateY(-8px);
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #F59E0B, #DC2626);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: #E2E8F0;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        /* ===== FEATURES SECTION ===== */
-        .features {
-            max-width: 1400px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .feature-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border: 1.5px solid rgba(245, 158, 11, 0.25);
-            border-radius: 16px;
-            padding: 2.5rem;
-            transition: all 0.4s ease;
-            backdrop-filter: blur(10px);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .feature-card::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #F59E0B, #DC2626, #F59E0B);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-
-        .feature-card:hover {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-            border-color: rgba(245, 158, 11, 0.6);
-            transform: translateY(-12px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-        }
-
-        .feature-card:hover::before {
-            opacity: 1;
-        }
-
-        .feature-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1.2rem;
-            display: inline-block;
-        }
-
-        .feature-card h3 {
-            color: #F59E0B;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            font-weight: 700;
-        }
-
-        .feature-card p {
-            color: #E2E8F0;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* ===== TESTIMONIALS ===== */
-        .testimonials {
-            max-width: 1400px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .testimonial-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border: 1.5px solid rgba(245, 158, 11, 0.3);
-            border-radius: 16px;
-            padding: 2.5rem;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .testimonial-card:hover {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
-            border-color: rgba(245, 158, 11, 0.6);
-            transform: translateY(-8px);
-        }
-
-        .stars {
-            color: #F59E0B;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .testimonial-text {
-            color: #E2E8F0;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #F59E0B, #DC2626);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-
-        .author-info h4 {
-            color: white;
-            font-size: 1rem;
-            margin-bottom: 0.2rem;
-        }
-
-        .author-info p {
-            color: #94A3B8;
-            font-size: 0.85rem;
-        }
-
-        /* ===== COMPARISON TABLE ===== */
-        .comparison {
-            max-width: 1400px;
-            margin: 5rem auto;
-            padding: 0 2rem;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1.5px solid rgba(245, 158, 11, 0.3);
-            backdrop-filter: blur(10px);
-            margin-top: 2rem;
-        }
-
-        .comparison-table th {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.3), rgba(220, 38, 38, 0.2));
-            color: white;
-            padding: 1.5rem;
-            text-align: left;
-            font-weight: 700;
-            border-bottom: 2px solid rgba(245, 158, 11, 0.3);
-        }
-
-        .comparison-table td {
-            padding: 1.5rem;
-            color: #E2E8F0;
-            border-bottom: 1px solid rgba(245, 158, 11, 0.1);
-        }
-
-        .comparison-table tr:hover {
-            background: rgba(245, 158, 11, 0.05);
-        }
-
-        .check-mark {
-            color: #10B981;
-            font-weight: bold;
-            font-size: 1.3rem;
-        }
-
-        .cross-mark {
-            color: #EF4444;
-            font-weight: bold;
-            font-size: 1.3rem;
+            50% { transform: translateY(-12px); }
         }
 
         /* ===== PROMO CODE SECTION ===== */
@@ -822,9 +453,29 @@
             border: 2px solid rgba(245, 158, 11, 0.4);
             border-radius: 16px;
             padding: 2.5rem;
-            margin: 3rem 0;
+            margin: 2.5rem 0;
+            animation: slideInLeft 0.8s ease-out 0.8s both;
             position: relative;
             overflow: hidden;
+        }
+
+        .promo-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #F59E0B, transparent);
+        }
+
+        .promo-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
         }
 
         .promo-code-box {
@@ -836,7 +487,6 @@
             border-radius: 10px;
             border: 2px solid rgba(245, 158, 11, 0.6);
             backdrop-filter: blur(10px);
-            margin-top: 1.5rem;
         }
 
         .promo-code-input {
@@ -851,6 +501,10 @@
             user-select: all;
             outline: none;
             font-family: 'Courier New', monospace;
+        }
+
+        .promo-code-input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
         }
 
         .btn-copy {
@@ -871,6 +525,323 @@
             box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
         }
 
+        .btn-copy.copied {
+            background: linear-gradient(135deg, #10B981, #059669);
+            animation: pulse-success 0.6s ease;
+        }
+
+        @keyframes pulse-success {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.12); }
+            100% { transform: scale(1); }
+        }
+
+        .copy-feedback {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #10B981, #059669);
+            color: white;
+            padding: 1.2rem 1.8rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
+            animation: slideInTop 0.4s ease-out;
+            z-index: 2000;
+            font-weight: 600;
+            border-left: 4px solid #10B981;
+        }
+
+        @keyframes slideInTop {
+            from {
+                opacity: 0;
+                transform: translateY(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== SOCIAL PROOF ===== */
+        .social-proof {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3.5rem 0;
+            animation: slideInLeft 0.8s ease-out 1s both;
+        }
+
+        .proof-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proof-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.5), transparent);
+        }
+
+        .proof-card:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+            border-color: rgba(245, 158, 11, 0.6);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .proof-number {
+            font-size: 2.8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #F59E0B, #DC2626);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .proof-text {
+            color: #E2E8F0;
+            font-size: 0.95rem;
+            margin-top: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* ===== FEATURES SECTION ===== */
+        .features {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: white;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            animation: slideInLeft 0.8s ease-out;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #E2E8F0;
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+            animation: slideInLeft 0.8s ease-out 0.2s both;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.25);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            animation: slideInLeft 0.8s ease-out;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #F59E0B, #DC2626, #F59E0B);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .feature-card:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+            border-color: rgba(245, 158, 11, 0.6);
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .feature-card h3 {
+            color: #F59E0B;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: #E2E8F0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== FAQ SECTION ===== */
+        .faq {
+            max-width: 1200px;
+            margin: 5rem auto;
+            padding: 0 2rem;
+        }
+
+        .faq-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .accordion {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.25);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .accordion:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .accordion-header {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.25), rgba(220, 38, 38, 0.15));
+            color: white;
+            padding: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .accordion-header:hover {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.35), rgba(220, 38, 38, 0.25));
+        }
+
+        .accordion-icon {
+            font-size: 1.3rem;
+            transition: transform 0.3s ease;
+        }
+
+        .accordion.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .accordion.active .accordion-content {
+            max-height: 400px;
+        }
+
+        .accordion-text {
+            color: #E2E8F0;
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+
+        /* ===== SHARE SECTION ===== */
+        .share-section {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.15), rgba(220, 38, 38, 0.15));
+            border: 2px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 4rem auto;
+            text-align: center;
+            animation: slideInLeft 0.8s ease-out 1.2s both;
+            max-width: 1200px;
+            width: calc(100% - 4rem);
+        }
+
+        .share-section h3 {
+            color: white;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-share-social {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+        }
+
+        .btn-facebook {
+            background: linear-gradient(135deg, #1877F2, #0A66C2);
+            color: white;
+        }
+
+        .btn-messenger {
+            background: linear-gradient(135deg, #0084FF, #0060D5);
+            color: white;
+        }
+
+        .btn-share-social:hover {
+            transform: scale(1.2) translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+        }
+
         /* ===== FLOATING CTA ===== */
         .floating-cta {
             position: fixed;
@@ -878,7 +849,7 @@
             right: 20px;
             background: linear-gradient(135deg, #DC2626, #991B1B);
             color: white;
-            padding: 1.2rem 2rem;
+            padding: 1.1rem 1.8rem;
             border-radius: 50px;
             box-shadow: 0 12px 35px rgba(220, 38, 38, 0.6);
             cursor: pointer;
@@ -887,7 +858,7 @@
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem;
             animation: slideInRight 0.6s ease-out;
             border: 2px solid rgba(255, 255, 255, 0.2);
         }
@@ -897,77 +868,73 @@
             box-shadow: 0 18px 45px rgba(220, 38, 38, 0.8);
         }
 
+        .floating-cta::before {
+            content: "📱";
+        }
+
         /* ===== FOOTER ===== */
         footer {
             background: rgba(15, 23, 42, 0.98);
             color: #E2E8F0;
-            padding: 4rem 2rem 2rem;
+            text-align: center;
+            padding: 3rem 2rem;
             margin-top: 5rem;
             border-top: 2px solid rgba(245, 158, 11, 0.2);
         }
 
         .footer-content {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
             margin-bottom: 2rem;
+            flex-wrap: wrap;
         }
 
-        .footer-section h3 {
+        .footer-links a {
             color: #F59E0B;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .footer-section a {
-            display: block;
-            color: #E2E8F0;
             text-decoration: none;
-            margin-bottom: 0.8rem;
             transition: all 0.3s ease;
-            font-size: 0.9rem;
+            font-weight: 600;
         }
 
-        .footer-section a:hover {
-            color: #F59E0B;
-            transform: translateX(5px);
+        .footer-links a:hover {
+            color: #DC2626;
+            transform: translateY(-2px);
         }
 
         .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(245, 158, 11, 0.2);
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: #94A3B8;
+            line-height: 1.8;
         }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .hero {
-                grid-template-columns: 1fr;
-                padding: 2.5rem 1.5rem;
-                min-height: auto;
                 gap: 2rem;
+                padding: 3rem 1.5rem;
             }
 
             .hero-content h1 {
                 font-size: 2.5rem;
             }
 
-            .hero-image {
-                order: -1;
-            }
-
-            nav {
-                gap: 1rem;
-                font-size: 0.85rem;
-            }
-
             .phone-mockup {
-                width: 250px;
-                height: 500px;
+                width: 240px;
+                height: 480px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .faq-container {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -977,39 +944,29 @@
             }
 
             .countdown-timer {
-                font-size: 1rem;
-            }
-
-            header {
-                padding: 0.8rem 1rem;
-            }
-
-            .header-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 0.5rem;
-                width: 100%;
-            }
-
-            nav a {
-                font-size: 0.85rem;
+                font-size: 1.1rem;
             }
 
             .hero {
-                padding: 1.5rem 1rem;
-                gap: 1.5rem;
+                grid-template-columns: 1fr;
+                padding: 2rem 1rem;
+                min-height: auto;
+                gap: 2rem;
             }
 
             .hero-content h1 {
                 font-size: 1.8rem;
+                margin-bottom: 1rem;
             }
 
-            .hero-subtitle {
+            .hero-content p {
                 font-size: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero-image {
+                order: -1;
+                margin-bottom: 2rem;
             }
 
             .phone-mockup {
@@ -1019,448 +976,529 @@
 
             .cta-buttons {
                 flex-direction: column;
+                gap: 0.8rem;
             }
 
             .btn {
                 width: 100%;
                 justify-content: center;
-                padding: 1rem 1.5rem;
+                padding: 0.9rem 1.5rem;
+                font-size: 0.95rem;
             }
 
             .bonus-highlight {
                 padding: 1.5rem;
+                margin-bottom: 1.5rem;
             }
 
             .bonus-highlight h2 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
+            }
+
+            .bonus-box {
+                padding: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .promo-section {
+                padding: 1.5rem;
+                margin: 1.5rem 0;
+            }
+
+            .promo-code-box {
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 0.8rem;
+            }
+
+            .promo-code-input {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .btn-copy {
+                width: 100%;
+                padding: 0.7rem 1rem;
+            }
+
+            .social-proof {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+
+            .proof-card {
+                padding: 1.5rem;
+            }
+
+            .proof-number {
+                font-size: 2.2rem;
+            }
+
+            .features {
+                margin: 3rem auto;
+                padding: 0 1rem;
             }
 
             .section-title {
                 font-size: 1.8rem;
+                margin-bottom: 0.8rem;
             }
 
             .section-subtitle {
                 font-size: 0.95rem;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+                margin-bottom: 2rem;
             }
 
             .features-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
 
-            .testimonials-grid {
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .feature-icon {
+                font-size: 2.5rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .feature-card p {
+                font-size: 0.9rem;
+            }
+
+            .faq {
+                margin: 3rem auto;
+                padding: 0 1rem;
+            }
+
+            .faq-container {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
 
-            .comparison-table {
-                font-size: 0.85rem;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
+            .accordion-header {
                 padding: 1rem;
+                font-size: 0.95rem;
+            }
+
+            .accordion-text {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .share-section {
+                padding: 2rem 1rem;
+                margin: 3rem auto;
+                width: calc(100% - 2rem);
+            }
+
+            .share-section h3 {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .share-buttons {
+                gap: 1rem;
+            }
+
+            .btn-share-social {
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
             }
 
             .floating-cta {
                 bottom: 15px;
                 right: 15px;
-                padding: 0.9rem 1.5rem;
+                padding: 0.8rem 1.2rem;
                 font-size: 0.9rem;
             }
 
-            footer {
-                padding: 2rem 1rem 1rem;
+            header {
+                padding: 0.8rem 1rem;
             }
 
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
+            .header-container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            footer {
+                padding: 2rem 1rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+                font-size: 0.85rem;
             }
         }
 
-        @media (max-width: 480px) {
+        @media (max-width: 600px) {
+            .hero {
+                padding: 1.5rem 1rem;
+                gap: 1.5rem;
+            }
+
             .hero-content h1 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
 
             .phone-mockup {
-                width: 160px;
-                height: 320px;
+                width: 170px;
+                height: 340px;
+            }
+
+            .bonus-highlight {
+                padding: 1rem;
+            }
+
+            .bonus-highlight h2 {
+                font-size: 1.3rem;
             }
 
             .btn {
                 padding: 0.8rem 1.2rem;
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
 
             .section-title {
                 font-size: 1.5rem;
             }
 
-            .stats-grid {
-                grid-template-columns: 1fr;
+            .feature-card {
+                padding: 1.2rem;
             }
 
-            .stat-number {
-                font-size: 2rem;
-            }
-
-            .comparison-table {
-                font-size: 0.75rem;
+            .share-section {
+                padding: 1.5rem 1rem;
             }
 
             .floating-cta {
                 bottom: 10px;
                 right: 10px;
                 padding: 0.7rem 1rem;
-                font-size: 0.75rem;
+                font-size: 0.85rem;
             }
         }
 
-        counter-reset: step-counter;
+        @media (max-width: 480px) {
+            .hero {
+                padding: 1rem 0.8rem;
+                gap: 1rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.3rem;
+            }
+
+            .phone-mockup {
+                width: 150px;
+                height: 300px;
+            }
+
+            .btn {
+                padding: 0.7rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .bonus-highlight {
+                padding: 0.9rem;
+            }
+
+            .bonus-highlight h2 {
+                font-size: 1.1rem;
+            }
+
+            .promo-code-input {
+                font-size: 0.95rem;
+                letter-spacing: 1.5px;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+            }
+
+            .feature-card {
+                padding: 1rem;
+            }
+
+            .feature-icon {
+                font-size: 1.8rem;
+            }
+
+            .share-section {
+                padding: 1rem 0.8rem;
+                margin: 1.5rem auto;
+                width: calc(100% - 1.6rem);
+            }
+
+            .btn-share-social {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+
+            .floating-cta {
+                bottom: 8px;
+                right: 8px;
+                padding: 0.6rem 0.9rem;
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- ===== COUNTDOWN BANNER ===== -->
     <div class="countdown-banner">
-        <div class="countdown-timer">⏰ Offre limitée: <span id="timer">24:00:00</span> | Télécharge l'app 1xBet officielle maintenant!</div>
+        <div class="countdown-timer">⏰ Offre expire dans: <span id="timer">24:00:00</span></div>
     </div>
 
-    <!-- ===== HEADER/NAVIGATION ===== -->
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="header-container">
-            <a href="#" class="logo">
+            <div class="logo">
                 <div class="logo-icon">1x</div>
                 <span>1xBet Global</span>
-            </a>
-            
-            <nav>
-                <a href="#accueil">Accueil</a>
-                <div class="nav-dropdown">
-                    <a href="#app">Application ▼</a>
-                    <div class="dropdown-content">
-                        <a href="#telecharger">Télécharger l'App</a>
-                        <a href="#installation">Guide d'Installation</a>
-                        <a href="#systemes">Systèmes Supportés</a>
-                    </div>
-                </div>
-                <a href="#bonus">Bonus</a>
-                <a href="#features">Fonctionnalités</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <div class="badge-secure">Sécurisé & Fiable</div>
+            </div>
+            <div class="badge-secure">Plateforme Sécurisée Mondiale</div>
         </div>
     </header>
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="hero" id="accueil">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Télécharge <span class="highlight">1xBet</span> - La Plateforme #1 Mondiale</h1>
-            <p class="hero-subtitle">Application officielle disponible sur iOS & Android</p>
-            <p>Accès direct à tous les paris sportifs, casino en ligne et jeux d'argent. Interface ultra-rapide, sécurisée et intuitive.</p>
+            <h1>Gagne Dès Maintenant avec <span class="highlight">1xBet</span></h1>
+            <p>La plateforme de paris #1 dans le monde. Bonus énorme + 500 FCFA gratuit sans dépôt!</p>
             
             <div class="bonus-highlight">
-                <h2>🎁 BONUS SANS DÉPÔT</h2>
-                <div class="bonus-item">500 FCFA gratuit à l'inscription (app officielle)</div>
-                <div class="bonus-item">+ 500% de bonus sur premier dépôt</div>
-                <div class="bonus-item">+ 50% cashback permanent</div>
-                <div class="bonus-item">Valable dans 195+ pays</div>
+                <h2>🎁 BONUS INCROYABLE SANS DÉPÔT</h2>
+                <div class="bonus-item">500 FCFA gratuit à l'inscription (numéro téléphone requis)</div>
+                <div class="bonus-item">+ 500% de bonus sur ton premier dépôt</div>
+                <div class="bonus-item">+ 50% cashback sur chaque pari</div>
+                <div class="bonus-item">Valable partout dans le monde 🌍</div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #FCA5A5;">⚡ Offre limitée - Expire dans 24h!</p>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129" class="btn btn-primary" target="_blank">📱 Télécharger l'App Officielle</a>
-                <a href="#installation" class="btn btn-secondary">📖 Guide d'Installation</a>
+                <a href="https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129" class="btn btn-primary btn-icon" target="_blank">Obtenir 500 FCFA Maintenant</a>
+                <button class="btn btn-secondary btn-share" onclick="shareApp()">Partager</button>
             </div>
 
             <div class="promo-section">
                 <h3>💳 Code Promo Exclusif</h3>
                 <div class="promo-code-box">
                     <input type="text" class="promo-code-input" id="promoCode" value="1x_4244948" readonly>
-                    <button class="btn-copy" onclick="copyPromoCode()">Copier</button>
+                    <button class="btn-copy" id="copyBtn" onclick="copyPromoCode()">Copier</button>
+                </div>
+            </div>
+
+            <div class="social-proof">
+                <div class="proof-card">
+                    <div class="proof-number" id="downloadCounter">5.2M+</div>
+                    <div class="proof-text">Utilisateurs Actifs</div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">4.9★</div>
+                    <div class="proof-text">Note Globale</div>
+                </div>
+                <div class="proof-card">
+                    <div class="proof-number">195+</div>
+                    <div class="proof-text">Pays Couverts</div>
                 </div>
             </div>
         </div>
 
         <div class="hero-image">
             <div class="phone-mockup">
-                <div class="app-badge">✅ App Officielle</div>
+                <div class="version-badge">✅ Dernière v.</div>
                 <div class="phone-screen">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10" alt="1xBet App Officielle">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10" alt="1xBet App">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== INSTALLATION GUIDE ===== -->
-    <section class="installation-guide" id="installation">
-        <h2 class="section-title">Comment Télécharger & Installer l'App 1xBet</h2>
-        <p class="section-subtitle">Processus simple en 4 étapes</p>
-        
-        <div class="steps-grid">
-            <div class="step-card">
-                <div class="step-number">1</div>
-                <h3>Télécharger l'App</h3>
-                <p>Clique sur le bouton "Télécharger l'App Officielle" en haut. Tu seras redirigé vers l'app store officiel (iOS/Android).</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">2</div>
-                <h3>Installer l'Application</h3>
-                <p>Appuie sur "Installer" et attends que l'app se télécharge et s'installe automatiquement. Cela prend moins de 2 minutes.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">3</div>
-                <h3>Créer un Compte</h3>
-                <p>Ouvre l'app, clique "S'inscrire", remplis tes infos (email, téléphone, mot de passe) et valide ton compte.</p>
-            </div>
-
-            <div class="step-card">
-                <div class="step-number">4</div>
-                <h3>Utiliser le Code Promo</h3>
-                <p>Entre le code <strong>1x_4244948</strong> lors de l'inscription pour obtenir 500 FCFA gratuit + bonus 500%!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== STATISTICS ===== -->
-    <section class="statistics">
-        <h2 class="section-title">1xBet en Chiffres</h2>
-        <p class="section-subtitle">La plateforme de paris la plus fiable du monde</p>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">5.2M+</div>
-                <div class="stat-label">Utilisateurs Actifs</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">195+</div>
-                <div class="stat-label">Pays Supportés</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">4.9★</div>
-                <div class="stat-label">Note Moyenne</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Support Client</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FEATURES ===== -->
-    <section class="features" id="features">
-        <h2 class="section-title">Pourquoi Choisir 1xBet?</h2>
-        <p class="section-subtitle">Les meilleures fonctionnalités de l'industrie</p>
-
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features">
+        <h2 class="section-title">Pourquoi 1xBet est #1 Mondial</h2>
+        <p class="section-subtitle">La plateforme de paris la plus fiable et la plus rémunératrice du monde</p>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>App Officielle Ultra-Rapide</h3>
-                <p>Interface optimisée pour iOS et Android. Chargement instantané, zéro lag, expérience fluide garantie.</p>
-            </div>
-
-            <div class="feature-card">
                 <div class="feature-icon">🔒</div>
-                <h3>Sécurité Maximale</h3>
-                <p>Chiffrement SSL 256-bit, licence internationale, protection des données garantie. Ton argent est 100% sécurisé.</p>
+                <h3>100% Sécurisé</h3>
+                <p>Licence internationale, chiffrement SSL avancé et protection garantie de tes données sur tous les serveurs mondiaux.</p>
             </div>
-
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Ultra Rapide</h3>
+                <p>Interface fluide optimisée. Télécharge, installe et commence à parier en moins de 60 secondes.</p>
+            </div>
             <div class="feature-card">
                 <div class="feature-icon">💰</div>
                 <h3>Bonus Énormes</h3>
-                <p>500 FCFA gratuit + 500% bonus + 50% cashback. Les meilleures offres du marché mondial.</p>
+                <p>500 FCFA gratuit + 500% de bonus + 50% cashback. Les meilleures offres du marché mondial.</p>
             </div>
-
             <div class="feature-card">
-                <div class="feature-icon">⚽</div>
-                <h3>Tous les Sports</h3>
-                <p>Football, tennis, basketball, esports, et plus. Cotes en direct, streaming gratuit, statistiques détaillées.</p>
+                <div class="feature-icon">📱</div>
+                <h3>Compatible Partout</h3>
+                <p>iOS, Android, Web. Joue sur tous tes appareils avec synchronisation automatique instantanée.</p>
             </div>
-
             <div class="feature-card">
-                <div class="feature-icon">💳</div>
-                <h3>Paiements Faciles</h3>
-                <p>Virement bancaire, portefeuille mobile, crypto-monnaies. Retraits en 24-48h, sans frais cachés.</p>
+                <div class="feature-icon">🎯</div>
+                <h3>Cotes Meilleures</h3>
+                <p>Les cotes les plus compétitives du marché pour maximiser tes gains sur tous les sports.</p>
             </div>
-
             <div class="feature-card">
                 <div class="feature-icon">🌍</div>
                 <h3>Couverture Mondiale</h3>
-                <p>195+ pays, support multi-langue, événements 24/7. Parie sur n'importe quel événement, n'importe où.</p>
+                <p>195+ pays. Tous les événements sportifs mondiaux en direct avec streaming HD gratuit.</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials">
-        <h2 class="section-title">Avis des Utilisateurs</h2>
-        <p class="section-subtitle">Rejoins les millions d'utilisateurs satisfaits</p>
+    <!-- ===== SHARE SECTION ===== -->
+    <section class="share-section">
+        <h3>📤 Partage et Gagne Ensemble</h3>
+        <div class="share-buttons">
+            <button class="btn-share-social btn-whatsapp" onclick="shareOnWhatsApp()" title="Partager sur WhatsApp">💬</button>
+            <button class="btn-share-social btn-facebook" onclick="shareOnFacebook()" title="Partager sur Facebook">f</button>
+            <button class="btn-share-social btn-messenger" onclick="shareOnMessenger()" title="Partager sur Messenger">📨</button>
+        </div>
+    </section>
 
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"L'app 1xBet est incroyable! J'ai reçu mes 500 FCFA gratuit en 2 minutes et j'ai déjà gagné 5000 FCFA. Recommandé!"</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">MK</div>
-                    <div class="author-info">
-                        <h4>Mohamed K.</h4>
-                        <p>Mali</p>
+    <!-- ===== FAQ SECTION ===== -->
+    <section class="faq">
+        <h2 class="section-title">Questions Fréquentes</h2>
+        <p class="section-subtitle">Tout ce que tu dois savoir sur 1xBet</p>
+        <div class="faq-container">
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Comment obtenir les 500 FCFA gratuits?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        C'est simple! Clique sur "Obtenir 500 FCFA Maintenant", crée ton compte avec un numéro de téléphone valide, et utilise le code promo <strong>1x_4244948</strong>. Les 500 FCFA seront crédités automatiquement dans les 2 minutes. Aucun dépôt requis!
                     </div>
                 </div>
             </div>
 
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Super rapide, super sécurisé. J'ai retiré 50000 FCFA en 24h sans problème. L'interface est trop bien!"</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">AJ</div>
-                    <div class="author-info">
-                        <h4>Aminata J.</h4>
-                        <p>Sénégal</p>
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Le bonus 500% est-il automatique?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        Oui! Le bonus de 500% s'ajoute automatiquement lors de ton premier dépôt. Le code promo <strong>1x_4244948</strong> déverrouille le bonus maximum. C'est vraiment automatique et instantané.
                     </div>
                 </div>
             </div>
 
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-text">"Meilleure plateforme de paris que j'ai jamais utilisée. Cotes excellentes et support client très réactif!"</p>
-                <div class="testimonial-author">
-                    <div class="author-avatar">PD</div>
-                    <div class="author-info">
-                        <h4>Pierre D.</h4>
-                        <p>Belgique</p>
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Est-ce légal dans mon pays?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        1xBet opère légalement dans 195+ pays avec des licences internationales reconnues. Nous respectons les lois locales de chaque région. Vérifie simplement les conditions de ton pays avant de t'inscrire.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Comment retirer mes gains?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        Accède à "Retrait" dans ton compte, choisis ta méthode (virement bancaire, portefeuille mobile, crypto, etc.) et suis les instructions. Les retraits sont traités en 24-48h maximum. Pas de frais cachés!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Quel est le montant minimum pour parier?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        Le minimum dépend du type de pari, mais généralement c'est à partir de 50 FCFA. Avec tes 500 FCFA gratuits, tu peux faire 10 paris! Consulte les conditions spécifiques dans l'app pour chaque type de pari.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    <span>Puis-je jouer sur plusieurs appareils?</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        Oui! Connecte-toi avec le même compte sur téléphone, tablette et ordinateur. Tes données, solde et historique se synchronisent automatiquement en temps réel sur tous tes appareils.
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- ===== COMPARISON TABLE ===== -->
-    <section class="comparison">
-        <h2 class="section-title">Comparaison: 1xBet vs Concurrents</h2>
-        <p class="section-subtitle">Pourquoi 1xBet est le meilleur choix</p>
-
-        <table class="comparison-table">
-            <thead>
-                <tr>
-                    <th>Fonctionnalité</th>
-                    <th>1xBet</th>
-                    <th>Concurrents</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Bonus sans dépôt</td>
-                    <td><span class="check-mark">✓</span> 500 FCFA</td>
-                    <td><span class="cross-mark">✗</span></td>
-                </tr>
-                <tr>
-                    <td>Bonus premier dépôt</td>
-                    <td><span class="check-mark">✓</span> 500%</td>
-                    <td><span class="check-mark">✓</span> 100-200%</td>
-                </tr>
-                <tr>
-                    <td>Cashback</td>
-                    <td><span class="check-mark">✓</span> 50%</td>
-                    <td><span class="check-mark">✓</span> 5-10%</td>
-                </tr>
-                <tr>
-                    <td>Pays supportés</td>
-                    <td><span class="check-mark">✓</span> 195+</td>
-                    <td><span class="check-mark">✓</span> 50-100</td>
-                </tr>
-                <tr>
-                    <td>Vitesse retrait</td>
-                    <td><span class="check-mark">✓</span> 24-48h</td>
-                    <td><span class="check-mark">✓</span> 3-7 jours</td>
-                </tr>
-                <tr>
-                    <td>Support 24/7</td>
-                    <td><span class="check-mark">✓</span> Oui</td>
-                    <td><span class="check-mark">✓</span> Oui</td>
-                </tr>
-                <tr>
-                    <td>Cotes compétitives</td>
-                    <td><span class="check-mark">✓</span> Meilleures</td>
-                    <td><span class="check-mark">✓</span> Bonnes</td>
-                </tr>
-                <tr>
-                    <td>Streaming gratuit</td>
-                    <td><span class="check-mark">✓</span> Oui</td>
-                    <td><span class="cross-mark">✗</span></td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 
     <!-- ===== FOOTER ===== -->
     <footer>
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>À Propos</h3>
-                <a href="#">Qui sommes-nous?</a>
-                <a href="#">Notre histoire</a>
-                <a href="#">Nos valeurs</a>
-                <a href="#">Carrières</a>
+            <div class="footer-links">
+                <a href="#conditions">Conditions d'utilisation</a>
+                <a href="#privacy">Politique de confidentialité</a>
+                <a href="#responsible">Jeu Responsable</a>
+                <a href="#contact">Support 24/7</a>
             </div>
-
-            <div class="footer-section">
-                <h3>Application</h3>
-                <a href="#">Télécharger iOS</a>
-                <a href="#">Télécharger Android</a>
-                <a href="#">Version Web</a>
-                <a href="#">Guide d'installation</a>
+            <div class="footer-bottom">
+                <p>© 2026 1xBet Global. Tous droits réservés. | Opérant dans 195+ pays</p>
+                <p>⚠️ Jeu responsable - Joue avec modération. 18+ uniquement. Les gains ne sont pas garantis.</p>
             </div>
-
-            <div class="footer-section">
-                <h3>Support</h3>
-                <a href="#">Centre d'aide</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
-                <a href="#">Signaler un problème</a>
-            </div>
-
-            <div class="footer-section">
-                <h3>Légal</h3>
-                <a href="#">Conditions d'utilisation</a>
-                <a href="#">Politique de confidentialité</a>
-                <a href="#">Jeu responsable</a>
-                <a href="#">Licences</a>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 1xBet Global. Tous droits réservés. | Licence internationale | Opérant dans 195+ pays</p>
-            <p>⚠️ Jeu responsable - Joue avec modération. 18+ uniquement. Les gains ne sont pas garantis.</p>
         </div>
     </footer>
 
     <!-- ===== FLOATING CTA ===== -->
     <div class="floating-cta" onclick="window.open('https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129', '_blank')">
-        📱 Télécharger l'App
+        Obtenir 500 FCFA
     </div>
 
     <!-- ===== JAVASCRIPT ===== -->
     <script>
-        // Countdown Timer
+        // ===== COUNTDOWN TIMER =====
         function startCountdown() {
             const timerElement = document.getElementById('timer');
-            let hours = 24, minutes = 0, seconds = 0;
+            let hours = 24;
+            let minutes = 0;
+            let seconds = 0;
 
             setInterval(() => {
-                if (seconds > 0) seconds--;
-                else if (minutes > 0) { minutes--; seconds = 59; }
-                else if (hours > 0) { hours--; minutes = 59; seconds = 59; }
-                else { hours = 24; minutes = 0; seconds = 0; }
+                if (seconds > 0) {
+                    seconds--;
+                } else if (minutes > 0) {
+                    minutes--;
+                    seconds = 59;
+                } else if (hours > 0) {
+                    hours--;
+                    minutes = 59;
+                    seconds = 59;
+                } else {
+                    hours = 24;
+                    minutes = 0;
+                    seconds = 0;
+                }
 
                 timerElement.textContent = 
                     String(hours).padStart(2, '0') + ':' +
@@ -1469,15 +1507,130 @@
             }, 1000);
         }
 
-        // Copy Promo Code
+        // ===== COPY PROMO CODE =====
         function copyPromoCode() {
             const promoInput = document.getElementById('promoCode');
             promoInput.select();
             document.execCommand('copy');
-            alert('✓ Code promo copié: 1x_4244948');
+
+            const copyBtn = document.getElementById('copyBtn');
+            copyBtn.textContent = '✓ Copié!';
+            copyBtn.classList.add('copied');
+
+            showNotification('Code promo copié avec succès!');
+
+            setTimeout(() => {
+                copyBtn.textContent = 'Copier';
+                copyBtn.classList.remove('copied');
+            }, 2000);
+
+            gtag('event', 'copy_promo_code', {
+                'promo_code': '1x_4244948'
+            });
         }
 
-        window.addEventListener('load', startCountdown);
+        // ===== SHOW NOTIFICATION =====
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'copy-feedback';
+            notification.textContent = '✓ ' + message;
+            document.body.appendChild(notification);
+
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // ===== ACCORDION TOGGLE =====
+        function toggleAccordion(header) {
+            const accordion = header.parentElement;
+            accordion.classList.toggle('active');
+
+            document.querySelectorAll('.accordion').forEach(acc => {
+                if (acc !== accordion) {
+                    acc.classList.remove('active');
+                }
+            });
+        }
+
+        // ===== SHARE FUNCTIONS =====
+        function shareApp() {
+            if (navigator.share) {
+                navigator.share({
+                    title: '1xBet - 500 FCFA Gratuit',
+                    text: 'Gagne 500 FCFA sans dépôt + 500% de bonus! Code: 1x_4244948',
+                    url: window.location.href
+                });
+            } else {
+                alert('Partage non supporté sur ce navigateur');
+            }
+        }
+
+        function shareOnWhatsApp() {
+            const text = "🎁 DÉCOUVRE 1xBet! Reçois 500 FCFA GRATUIT sans dépôt + 500% bonus! Code promo: 1x_4244948 📱 Offre limitée 24h!";
+            const url = `https://wa.me/?text=${encodeURIComponent(text + ' ' + window.location.href)}`;
+            window.open(url, '_blank');
+            gtag('event', 'share', { 'method': 'whatsapp' });
+        }
+
+        function shareOnFacebook() {
+            const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank', 'width=600,height=400');
+            gtag('event', 'share', { 'method': 'facebook' });
+        }
+
+        function shareOnMessenger() {
+            const text = "🎁 1xBet: 500 FCFA gratuit! Code: 1x_4244948";
+            const url = `https://www.facebook.com/dialog/send?app_id=YOUR_APP_ID&link=${encodeURIComponent(window.location.href)}&redirect_uri=${encodeURIComponent(window.location.href)}`;
+            window.open(url, '_blank');
+            gtag('event', 'share', { 'method': 'messenger' });
+        }
+
+        // ===== DYNAMIC DOWNLOAD COUNTER =====
+        function updateDownloadCounter() {
+            const counter = document.getElementById('downloadCounter');
+            const baseNumber = 5200000;
+            const randomIncrease = Math.floor(Math.random() * 100000);
+            const total = baseNumber + randomIncrease;
+            counter.textContent = (total / 1000000).toFixed(1) + 'M+';
+        }
+
+        setInterval(updateDownloadCounter, 8000);
+
+        // ===== TRACK PAGE VIEWS =====
+        gtag('event', 'page_view', {
+            'page_title': '1xBet Global',
+            'page_path': window.location.pathname
+        });
+
+        // ===== TRACK DOWNLOAD CLICKS =====
+        document.querySelectorAll('a[href*="refpa14435"]').forEach(link => {
+            link.addEventListener('click', function() {
+                gtag('event', 'download_click', {
+                    'button_text': this.textContent
+                });
+            });
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ===== OPEN FIRST ACCORDION BY DEFAULT =====
+        window.addEventListener('load', function() {
+            const firstAccordion = document.querySelector('.accordion');
+            if (firstAccordion) {
+                firstAccordion.classList.add('active');
+            }
+            startCountdown();
+        });
     </script>
 </body>
 </html>

@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Télécharger l'application 1xBet Côte d'Ivoire - Bonus 500%</title>
-    <meta name="description" content="Télécharge l'application 1xBet en Côte d'Ivoire et profite d'un bonus de 500% + 50% cashback. Code promo exclusif 1x_4244948. Sécurisé et fiable.">
-    <meta name="keywords" content="1xbet cote d'ivoire, telecharger 1xbet, bonus 1xbet 500%, code promo 1xbet, application 1xbet">
+    <title>1xBet - Bonus 500 FCFA GRATUIT + 500% - Inscription Rapide</title>
+    <meta name="description" content="🎁 Obtiens 500 FCFA GRATUIT sans dépôt + Bonus 500% en créant ton compte 1xBet. Code promo: 1x_4244948. Valable partout dans le monde. Offre limitée!">
+    <meta name="keywords" content="1xbet bonus, 500 fcfa gratuit, code promo 1xbet, bonus sans depot, 1xbet international, telecharger 1xbet">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Télécharger 1xBet - Bonus 500% + 50% Cashback">
-    <meta property="og:description" content="Obtiens 500% de bonus + 50% cashback avec le code promo exclusif 1x_4244948. Sécurisé et fiable.">
+    <meta property="og:title" content="1xBet - 500 FCFA GRATUIT + Bonus 500%">
+    <meta property="og:description" content="Crée ton compte avec 1x_4244948 et reçois 500 FCFA gratuit + 500% de bonus. Offre limitée!">
     <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10">
     <meta property="og:url" content="https://tonsite.com">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Télécharger 1xBet - Bonus 500%">
-    <meta name="twitter:description" content="Code promo exclusif: 1x_4244948 - Bonus 500% + 50% cashback">
+    <meta name="twitter:title" content="1xBet - 500 FCFA GRATUIT">
+    <meta name="twitter:description" content="Code promo: 1x_4244948 - 500 FCFA sans dépôt + 500% bonus">
     <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK7KMY3q8Tfy_324er4S2tiqOGDkR-InddMCLjwhBPQw&s=10">
     
     <!-- Favicon -->
@@ -46,6 +46,7 @@
             --dark: #0F172A;
             --light: #F8FAFC;
             --success: #10B981;
+            --warning: #EF4444;
         }
 
         body {
@@ -56,15 +57,47 @@
             overflow-x: hidden;
         }
 
+        /* ===== COUNTDOWN BANNER ===== */
+        .countdown-banner {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+            animation: pulse-banner 1s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .countdown-banner::before {
+            content: "⚡ OFFRE LIMITÉE ⚡";
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+        }
+
+        .countdown-timer {
+            font-size: 1.3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        @keyframes pulse-banner {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
         /* ===== HEADER ===== */
         header {
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(15, 23, 42, 0.98);
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            border-bottom: 2px solid rgba(245, 158, 11, 0.2);
         }
 
         .header-container {
@@ -95,11 +128,12 @@
             font-weight: bold;
             color: white;
             animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
         }
 
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            50% { transform: scale(1.08); }
         }
 
         .badge-secure {
@@ -108,10 +142,11 @@
             gap: 0.5rem;
             background: rgba(16, 185, 129, 0.2);
             color: #10B981;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
             font-size: 0.85rem;
             font-weight: 600;
+            border: 1px solid rgba(16, 185, 129, 0.4);
         }
 
         .badge-secure::before {
@@ -131,11 +166,12 @@
         }
 
         .hero-content h1 {
-            font-size: 3rem;
+            font-size: 3.2rem;
             color: white;
             margin-bottom: 1.5rem;
             line-height: 1.2;
             animation: slideInLeft 0.8s ease-out;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .hero-content h1 .highlight {
@@ -143,6 +179,12 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.5)); }
+            50% { filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.8)); }
         }
 
         @keyframes slideInLeft {
@@ -157,10 +199,69 @@
         }
 
         .hero-content p {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #E2E8F0;
             margin-bottom: 2rem;
             animation: slideInLeft 0.8s ease-out 0.2s both;
+            line-height: 1.8;
+        }
+
+        .bonus-highlight {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(245, 158, 11, 0.15));
+            border: 2px solid rgba(239, 68, 68, 0.5);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            animation: slideInLeft 0.8s ease-out 0.3s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bonus-highlight::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #EF4444, #F59E0B, #10B981);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .bonus-highlight h2 {
+            color: #EF4444;
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .bonus-highlight p {
+            color: #E2E8F0;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bonus-highlight .bonus-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin: 0.8rem 0;
+            font-size: 0.95rem;
+            color: #E2E8F0;
+        }
+
+        .bonus-highlight .bonus-item::before {
+            content: "✓";
+            color: #10B981;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
         .bonus-box {
@@ -191,28 +292,46 @@
         }
 
         .btn {
-            padding: 1rem 2rem;
+            padding: 1.1rem 2.2rem;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
+            letter-spacing: 0.5px;
         }
 
         .btn-primary {
             background: linear-gradient(135deg, #DC2626, #991B1B);
             color: white;
-            box-shadow: 0 8px 20px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(220, 38, 38, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(220, 38, 38, 0.7);
         }
 
         .btn-primary:active {
@@ -228,6 +347,7 @@
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.2);
             border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
         }
 
         .btn-icon::before {
@@ -244,6 +364,7 @@
             justify-content: center;
             align-items: center;
             animation: slideInRight 0.8s ease-out;
+            position: relative;
         }
 
         @keyframes slideInRight {
@@ -264,8 +385,14 @@
             background: linear-gradient(135deg, #1E40AF, #3B82F6);
             border-radius: 40px;
             padding: 12px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
             border: 8px solid #000;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
         }
 
         .phone-mockup::before {
@@ -304,45 +431,62 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            background: #10B981;
+            background: linear-gradient(135deg, #10B981, #059669);
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
             font-size: 0.8rem;
-            font-weight: 600;
+            font-weight: 700;
             z-index: 5;
             animation: bounce 2s infinite;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
         }
 
         @keyframes bounce {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-12px); }
         }
 
         /* ===== PROMO CODE SECTION ===== */
         .promo-section {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(220, 38, 38, 0.1));
-            border: 2px solid rgba(245, 158, 11, 0.3);
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.15), rgba(220, 38, 38, 0.15));
+            border: 2px solid rgba(245, 158, 11, 0.4);
             border-radius: 16px;
-            padding: 2rem;
-            margin: 2rem 0;
+            padding: 2.5rem;
+            margin: 2.5rem 0;
             animation: slideInLeft 0.8s ease-out 0.8s both;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .promo-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #F59E0B, transparent);
         }
 
         .promo-section h3 {
             color: white;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
         }
 
         .promo-code-box {
             display: flex;
             gap: 1rem;
             align-items: center;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 1rem;
-            border-radius: 8px;
-            border: 2px solid rgba(245, 158, 11, 0.5);
+            background: rgba(255, 255, 255, 0.08);
+            padding: 1.2rem;
+            border-radius: 10px;
+            border: 2px solid rgba(245, 158, 11, 0.6);
+            backdrop-filter: blur(10px);
         }
 
         .promo-code-input {
@@ -350,12 +494,13 @@
             background: transparent;
             border: none;
             color: white;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: bold;
             text-align: center;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             user-select: all;
             outline: none;
+            font-family: 'Courier New', monospace;
         }
 
         .promo-code-input::placeholder {
@@ -366,27 +511,28 @@
             background: linear-gradient(135deg, #F59E0B, #DC2626);
             color: white;
             border: none;
-            padding: 0.8rem 1.5rem;
-            border-radius: 6px;
-            font-weight: 600;
+            padding: 0.9rem 1.8rem;
+            border-radius: 8px;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             white-space: nowrap;
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.3);
         }
 
         .btn-copy:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+            transform: scale(1.08);
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
         }
 
         .btn-copy.copied {
-            background: #10B981;
+            background: linear-gradient(135deg, #10B981, #059669);
             animation: pulse-success 0.6s ease;
         }
 
         @keyframes pulse-success {
             0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            50% { transform: scale(1.12); }
             100% { transform: scale(1); }
         }
 
@@ -394,19 +540,21 @@
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #10B981;
+            background: linear-gradient(135deg, #10B981, #059669);
             color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+            padding: 1.2rem 1.8rem;
+            border-radius: 10px;
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.5);
             animation: slideInTop 0.4s ease-out;
             z-index: 2000;
+            font-weight: 600;
+            border-left: 4px solid #10B981;
         }
 
         @keyframes slideInTop {
             from {
                 opacity: 0;
-                transform: translateY(-30px);
+                transform: translateY(-40px);
             }
             to {
                 opacity: 1;
@@ -419,28 +567,42 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            margin: 3rem 0;
+            margin: 3.5rem 0;
             animation: slideInLeft 0.8s ease-out 1s both;
         }
 
         .proof-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            border-radius: 12px;
-            padding: 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
             text-align: center;
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .proof-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.5), transparent);
         }
 
         .proof-card:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(245, 158, 11, 0.5);
-            transform: translateY(-5px);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+            border-color: rgba(245, 158, 11, 0.6);
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .proof-number {
-            font-size: 2.5rem;
-            font-weight: bold;
+            font-size: 2.8rem;
+            font-weight: 900;
             background: linear-gradient(135deg, #F59E0B, #DC2626);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -450,37 +612,62 @@
         .proof-text {
             color: #E2E8F0;
             font-size: 0.95rem;
-            margin-top: 0.5rem;
+            margin-top: 0.8rem;
+            font-weight: 600;
         }
 
         /* ===== FEATURES SECTION ===== */
         .features {
             max-width: 1200px;
-            margin: 4rem auto;
+            margin: 5rem auto;
             padding: 0 2rem;
         }
 
         .section-title {
             text-align: center;
             color: white;
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
             animation: slideInLeft 0.8s ease-out;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #E2E8F0;
+            font-size: 1.05rem;
+            margin-bottom: 3rem;
+            animation: slideInLeft 0.8s ease-out 0.2s both;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
         }
 
         .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.25);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
             animation: slideInLeft 0.8s ease-out;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #F59E0B, #DC2626, #F59E0B);
+            opacity: 0;
+            transition: opacity 0.3s ease;
         }
 
         .feature-card:nth-child(2) {
@@ -492,69 +679,78 @@
         }
 
         .feature-card:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(245, 158, 11, 0.5);
-            transform: translateY(-8px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.06));
+            border-color: rgba(245, 158, 11, 0.6);
+            transform: translateY(-12px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
         }
 
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 3rem;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
         }
 
         .feature-card h3 {
             color: #F59E0B;
-            margin-bottom: 0.8rem;
-            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 700;
         }
 
         .feature-card p {
             color: #E2E8F0;
             font-size: 0.95rem;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* ===== FAQ SECTION ===== */
         .faq {
             max-width: 1200px;
-            margin: 4rem auto;
+            margin: 5rem auto;
             padding: 0 2rem;
         }
 
         .faq-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
         }
 
         .accordion {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1.5px solid rgba(245, 158, 11, 0.25);
+            border-radius: 12px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
         }
 
         .accordion:hover {
             border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .accordion-header {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.2), rgba(220, 38, 38, 0.1));
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.25), rgba(220, 38, 38, 0.15));
             color: white;
-            padding: 1.2rem;
+            padding: 1.4rem;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.3s ease;
             user-select: none;
         }
 
         .accordion-header:hover {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.3), rgba(220, 38, 38, 0.2));
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.35), rgba(220, 38, 38, 0.25));
         }
 
         .accordion-icon {
@@ -569,74 +765,81 @@
         .accordion-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease;
+            transition: max-height 0.4s ease;
             background: rgba(255, 255, 255, 0.02);
         }
 
         .accordion.active .accordion-content {
-            max-height: 300px;
+            max-height: 400px;
         }
 
         .accordion-text {
             color: #E2E8F0;
-            padding: 1.2rem;
+            padding: 1.5rem;
             font-size: 0.95rem;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         /* ===== SHARE SECTION ===== */
         .share-section {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.1), rgba(220, 38, 38, 0.1));
-            border-radius: 12px;
-            padding: 2rem;
-            margin: 3rem 0;
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.15), rgba(220, 38, 38, 0.15));
+            border: 2px solid rgba(245, 158, 11, 0.3);
+            border-radius: 16px;
+            padding: 3rem;
+            margin: 4rem auto;
             text-align: center;
             animation: slideInLeft 0.8s ease-out 1.2s both;
+            max-width: 1200px;
+            width: calc(100% - 4rem);
         }
 
         .share-section h3 {
             color: white;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
         }
 
         .share-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .btn-share-social {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             cursor: pointer;
             transition: all 0.3s ease;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            font-weight: bold;
         }
 
         .btn-whatsapp {
-            background: #25D366;
+            background: linear-gradient(135deg, #25D366, #128C7E);
             color: white;
         }
 
         .btn-facebook {
-            background: #1877F2;
+            background: linear-gradient(135deg, #1877F2, #0A66C2);
             color: white;
         }
 
         .btn-messenger {
-            background: #0084FF;
+            background: linear-gradient(135deg, #0084FF, #0060D5);
             color: white;
         }
 
         .btn-share-social:hover {
-            transform: scale(1.15);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: scale(1.2) translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
 
         /* ===== FLOATING CTA ===== */
@@ -646,22 +849,23 @@
             right: 20px;
             background: linear-gradient(135deg, #DC2626, #991B1B);
             color: white;
-            padding: 1rem 1.5rem;
+            padding: 1.1rem 1.8rem;
             border-radius: 50px;
-            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5);
+            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.6);
             cursor: pointer;
             transition: all 0.3s ease;
             z-index: 999;
-            font-weight: 600;
+            font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
             animation: slideInRight 0.6s ease-out;
+            border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
         .floating-cta:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.7);
+            transform: translateY(-6px);
+            box-shadow: 0 18px 45px rgba(220, 38, 38, 0.8);
         }
 
         .floating-cta::before {
@@ -670,12 +874,12 @@
 
         /* ===== FOOTER ===== */
         footer {
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(15, 23, 42, 0.98);
             color: #E2E8F0;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-            border-top: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 3rem 2rem;
+            margin-top: 5rem;
+            border-top: 2px solid rgba(245, 158, 11, 0.2);
         }
 
         .footer-content {
@@ -686,25 +890,29 @@
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 2rem;
-            margin-bottom: 1.5rem;
+            gap: 2.5rem;
+            margin-bottom: 2rem;
             flex-wrap: wrap;
         }
 
         .footer-links a {
             color: #F59E0B;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            font-weight: 600;
         }
 
         .footer-links a:hover {
             color: #DC2626;
+            transform: translateY(-2px);
         }
 
         .footer-bottom {
             font-size: 0.9rem;
             color: #94A3B8;
+            line-height: 1.8;
         }
+
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .hero {
@@ -731,6 +939,14 @@
         }
 
         @media (max-width: 768px) {
+            .countdown-banner {
+                padding: 0.8rem;
+            }
+
+            .countdown-timer {
+                font-size: 1.1rem;
+            }
+
             .hero {
                 grid-template-columns: 1fr;
                 padding: 2rem 1rem;
@@ -770,13 +986,18 @@
                 font-size: 0.95rem;
             }
 
-            .bonus-box {
-                padding: 1.2rem;
+            .bonus-highlight {
+                padding: 1.5rem;
                 margin-bottom: 1.5rem;
             }
 
-            .bonus-box h3 {
-                font-size: 1.1rem;
+            .bonus-highlight h2 {
+                font-size: 1.5rem;
+            }
+
+            .bonus-box {
+                padding: 1.2rem;
+                margin-bottom: 1.5rem;
             }
 
             .promo-section {
@@ -792,7 +1013,7 @@
 
             .promo-code-input {
                 font-size: 1.1rem;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
             }
 
             .btn-copy {
@@ -807,15 +1028,11 @@
             }
 
             .proof-card {
-                padding: 1.2rem;
+                padding: 1.5rem;
             }
 
             .proof-number {
-                font-size: 2rem;
-            }
-
-            .proof-text {
-                font-size: 0.9rem;
+                font-size: 2.2rem;
             }
 
             .features {
@@ -825,6 +1042,11 @@
 
             .section-title {
                 font-size: 1.8rem;
+                margin-bottom: 0.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
                 margin-bottom: 2rem;
             }
 
@@ -838,13 +1060,11 @@
             }
 
             .feature-icon {
-                font-size: 2rem;
-                margin-bottom: 0.8rem;
+                font-size: 2.5rem;
             }
 
             .feature-card h3 {
                 font-size: 1.1rem;
-                margin-bottom: 0.6rem;
             }
 
             .feature-card p {
@@ -861,17 +1081,9 @@
                 gap: 1.5rem;
             }
 
-            .accordion {
-                border-radius: 8px;
-            }
-
             .accordion-header {
                 padding: 1rem;
                 font-size: 0.95rem;
-            }
-
-            .accordion-icon {
-                font-size: 1.1rem;
             }
 
             .accordion-text {
@@ -880,24 +1092,24 @@
             }
 
             .share-section {
-                padding: 1.5rem;
-                margin: 2rem auto !important;
-                width: calc(100% - 2rem) !important;
+                padding: 2rem 1rem;
+                margin: 3rem auto;
+                width: calc(100% - 2rem);
             }
 
             .share-section h3 {
                 font-size: 1.3rem;
-                margin-bottom: 1.2rem;
+                margin-bottom: 1.5rem;
             }
 
             .share-buttons {
-                gap: 0.8rem;
+                gap: 1rem;
             }
 
             .btn-share-social {
-                width: 45px;
-                height: 45px;
-                font-size: 1.3rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.4rem;
             }
 
             .floating-cta {
@@ -905,7 +1117,6 @@
                 right: 15px;
                 padding: 0.8rem 1.2rem;
                 font-size: 0.9rem;
-                border-radius: 50px;
             }
 
             header {
@@ -921,28 +1132,13 @@
                 font-size: 1.3rem;
             }
 
-            .logo-icon {
-                width: 35px;
-                height: 35px;
-                font-size: 0.9rem;
-            }
-
-            .badge-secure {
-                font-size: 0.75rem;
-                padding: 0.4rem 0.8rem;
-            }
-
             footer {
-                padding: 1.5rem 1rem;
+                padding: 2rem 1rem;
             }
 
             .footer-links {
                 gap: 1rem;
                 font-size: 0.85rem;
-            }
-
-            .footer-bottom {
-                font-size: 0.8rem;
             }
         }
 
@@ -954,11 +1150,6 @@
 
             .hero-content h1 {
                 font-size: 1.5rem;
-                line-height: 1.3;
-            }
-
-            .hero-content p {
-                font-size: 0.95rem;
             }
 
             .phone-mockup {
@@ -966,28 +1157,12 @@
                 height: 340px;
             }
 
-            .phone-mockup::before {
-                width: 120px;
-                height: 20px;
-            }
-
-            .version-badge {
-                font-size: 0.7rem;
-                padding: 0.4rem 0.8rem;
-                top: 15px;
-                right: 15px;
-            }
-
-            .bonus-box {
+            .bonus-highlight {
                 padding: 1rem;
             }
 
-            .bonus-box h3 {
-                font-size: 1rem;
-            }
-
-            .bonus-box p {
-                font-size: 0.9rem;
+            .bonus-highlight h2 {
+                font-size: 1.3rem;
             }
 
             .btn {
@@ -995,36 +1170,16 @@
                 font-size: 0.9rem;
             }
 
-            .promo-section {
-                padding: 1.2rem;
-            }
-
-            .promo-code-input {
-                font-size: 1rem;
-                letter-spacing: 1px;
-            }
-
             .section-title {
                 font-size: 1.5rem;
-                margin-bottom: 1.5rem;
             }
 
             .feature-card {
                 padding: 1.2rem;
             }
 
-            .feature-icon {
-                font-size: 1.8rem;
-            }
-
-            .accordion-header {
-                padding: 0.9rem;
-                font-size: 0.9rem;
-            }
-
-            .accordion-text {
-                padding: 0.9rem;
-                font-size: 0.85rem;
+            .share-section {
+                padding: 1.5rem 1rem;
             }
 
             .floating-cta {
@@ -1043,12 +1198,6 @@
 
             .hero-content h1 {
                 font-size: 1.3rem;
-                margin-bottom: 0.8rem;
-            }
-
-            .hero-content p {
-                font-size: 0.9rem;
-                margin-bottom: 1rem;
             }
 
             .phone-mockup {
@@ -1061,51 +1210,21 @@
                 font-size: 0.85rem;
             }
 
-            .bonus-box {
+            .bonus-highlight {
                 padding: 0.9rem;
-                margin-bottom: 1rem;
             }
 
-            .promo-section {
-                padding: 1rem;
-                margin: 1rem 0;
-            }
-
-            .promo-code-box {
-                padding: 0.7rem;
-                gap: 0.6rem;
+            .bonus-highlight h2 {
+                font-size: 1.1rem;
             }
 
             .promo-code-input {
                 font-size: 0.95rem;
-                letter-spacing: 1px;
-            }
-
-            .btn-copy {
-                padding: 0.6rem 0.9rem;
-                font-size: 0.8rem;
-            }
-
-            .proof-card {
-                padding: 1rem;
-            }
-
-            .proof-number {
-                font-size: 1.8rem;
-            }
-
-            .proof-text {
-                font-size: 0.8rem;
-            }
-
-            .features {
-                margin: 2rem auto;
-                padding: 0 0.8rem;
+                letter-spacing: 1.5px;
             }
 
             .section-title {
                 font-size: 1.3rem;
-                margin-bottom: 1.2rem;
             }
 
             .feature-card {
@@ -1113,52 +1232,19 @@
             }
 
             .feature-icon {
-                font-size: 1.5rem;
-                margin-bottom: 0.6rem;
-            }
-
-            .feature-card h3 {
-                font-size: 1rem;
-            }
-
-            .feature-card p {
-                font-size: 0.85rem;
-            }
-
-            .faq {
-                margin: 2rem auto;
-                padding: 0 0.8rem;
-            }
-
-            .accordion-header {
-                padding: 0.8rem;
-                font-size: 0.85rem;
-            }
-
-            .accordion-icon {
-                font-size: 1rem;
-            }
-
-            .accordion-text {
-                padding: 0.8rem;
-                font-size: 0.8rem;
+                font-size: 1.8rem;
             }
 
             .share-section {
-                padding: 1.2rem 0.8rem;
-                margin: 1.5rem auto !important;
-                width: calc(100% - 1.6rem) !important;
-            }
-
-            .share-section h3 {
-                font-size: 1.1rem;
-                margin-bottom: 1rem;
+                padding: 1rem 0.8rem;
+                margin: 1.5rem auto;
+                width: calc(100% - 1.6rem);
             }
 
             .btn-share-social {
-                width: 40px;
-                height: 40px;
-                font-size: 1.1rem;
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
             }
 
             .floating-cta {
@@ -1167,69 +1253,43 @@
                 padding: 0.6rem 0.9rem;
                 font-size: 0.8rem;
             }
-
-            header {
-                padding: 0.6rem 0.8rem;
-            }
-
-            .logo {
-                font-size: 1.1rem;
-            }
-
-            .logo-icon {
-                width: 30px;
-                height: 30px;
-                font-size: 0.8rem;
-            }
-
-            .badge-secure {
-                font-size: 0.7rem;
-                padding: 0.3rem 0.6rem;
-            }
-
-            footer {
-                padding: 1.2rem 0.8rem;
-            }
-
-            .footer-links {
-                gap: 0.8rem;
-                font-size: 0.75rem;
-            }
-
-            .footer-bottom {
-                font-size: 0.75rem;
-            }
         }
-
-
-
     </style>
 </head>
 <body>
+    <!-- ===== COUNTDOWN BANNER ===== -->
+    <div class="countdown-banner">
+        <div class="countdown-timer">⏰ Offre expire dans: <span id="timer">24:00:00</span></div>
+    </div>
+
     <!-- ===== HEADER ===== -->
     <header>
         <div class="header-container">
             <div class="logo">
                 <div class="logo-icon">1x</div>
-                <span>1xBet Côte d'Ivoire</span>
+                <span>1xBet Global</span>
             </div>
-            <div class="badge-secure">Site sécurisé et fiable</div>
+            <div class="badge-secure">Plateforme Sécurisée Mondiale</div>
         </div>
     </header>
 
     <!-- ===== HERO SECTION ===== -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Télécharge <span class="highlight">1xBet</span> Maintenant</h1>
-            <p>Profite d'un bonus extraordinaire et commence à gagner dès aujourd'hui en Côte d'Ivoire.</p>
+            <h1>Gagne Dès Maintenant avec <span class="highlight">1xBet</span></h1>
+            <p>La plateforme de paris #1 dans le monde. Bonus énorme + 500 FCFA gratuit sans dépôt!</p>
             
-            <div class="bonus-box">
-                <h3>🎁 Offre Exclusive</h3>
-                <p><strong>Bonus 500% + 50% Cashback</strong> sur ton premier dépôt</p>
+            <div class="bonus-highlight">
+                <h2>🎁 BONUS INCROYABLE SANS DÉPÔT</h2>
+                <div class="bonus-item">500 FCFA gratuit à l'inscription (numéro téléphone requis)</div>
+                <div class="bonus-item">+ 500% de bonus sur ton premier dépôt</div>
+                <div class="bonus-item">+ 50% cashback sur chaque pari</div>
+                <div class="bonus-item">Valable partout dans le monde 🌍</div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #FCA5A5;">⚡ Offre limitée - Expire dans 24h!</p>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129" class="btn btn-primary btn-icon" target="_blank">Télécharger Maintenant</a>
+                <a href="https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129" class="btn btn-primary btn-icon" target="_blank">Obtenir 500 FCFA Maintenant</a>
                 <button class="btn btn-secondary btn-share" onclick="shareApp()">Partager</button>
             </div>
 
@@ -1243,16 +1303,16 @@
 
             <div class="social-proof">
                 <div class="proof-card">
-                    <div class="proof-number" id="downloadCounter">2.5M+</div>
-                    <div class="proof-text">Téléchargements</div>
+                    <div class="proof-number" id="downloadCounter">5.2M+</div>
+                    <div class="proof-text">Utilisateurs Actifs</div>
                 </div>
                 <div class="proof-card">
-                    <div class="proof-number">4.8★</div>
-                    <div class="proof-text">Note Utilisateurs</div>
+                    <div class="proof-number">4.9★</div>
+                    <div class="proof-text">Note Globale</div>
                 </div>
                 <div class="proof-card">
-                    <div class="proof-number">24/7</div>
-                    <div class="proof-text">Support Client</div>
+                    <div class="proof-number">195+</div>
+                    <div class="proof-text">Pays Couverts</div>
                 </div>
             </div>
         </div>
@@ -1269,44 +1329,45 @@
 
     <!-- ===== FEATURES SECTION ===== -->
     <section class="features">
-        <h2 class="section-title">Pourquoi Choisir 1xBet ?</h2>
+        <h2 class="section-title">Pourquoi 1xBet est #1 Mondial</h2>
+        <p class="section-subtitle">La plateforme de paris la plus fiable et la plus rémunératrice du monde</p>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">🔒</div>
                 <h3>100% Sécurisé</h3>
-                <p>Plateforme certifiée avec chiffrement SSL et protection de tes données personnelles garantie.</p>
+                <p>Licence internationale, chiffrement SSL avancé et protection garantie de tes données sur tous les serveurs mondiaux.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">⚡</div>
                 <h3>Ultra Rapide</h3>
-                <p>Interface fluide et responsive. Télécharge et installe en moins d'une minute.</p>
+                <p>Interface fluide optimisée. Télécharge, installe et commence à parier en moins de 60 secondes.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">💰</div>
                 <h3>Bonus Énormes</h3>
-                <p>500% de bonus + 50% cashback. Les meilleures offres du marché en Côte d'Ivoire.</p>
+                <p>500 FCFA gratuit + 500% de bonus + 50% cashback. Les meilleures offres du marché mondial.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📱</div>
-                <h3>Compatible Tous Appareils</h3>
-                <p>Fonctionne sur iOS, Android et tous les navigateurs. Joue où tu veux, quand tu veux.</p>
+                <h3>Compatible Partout</h3>
+                <p>iOS, Android, Web. Joue sur tous tes appareils avec synchronisation automatique instantanée.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
-                <h3>Cotes Compétitives</h3>
-                <p>Les meilleures cotes du marché pour maximiser tes gains sur tous les sports.</p>
+                <h3>Cotes Meilleures</h3>
+                <p>Les cotes les plus compétitives du marché pour maximiser tes gains sur tous les sports.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🌍</div>
                 <h3>Couverture Mondiale</h3>
-                <p>Accès à tous les événements sportifs mondiaux en direct avec streaming live.</p>
+                <p>195+ pays. Tous les événements sportifs mondiaux en direct avec streaming HD gratuit.</p>
             </div>
         </div>
     </section>
 
     <!-- ===== SHARE SECTION ===== -->
-    <section class="share-section" style="max-width: 1200px; margin: 4rem auto; width: calc(100% - 4rem);">
-        <h3>📤 Partage avec tes Amis</h3>
+    <section class="share-section">
+        <h3>📤 Partage et Gagne Ensemble</h3>
         <div class="share-buttons">
             <button class="btn-share-social btn-whatsapp" onclick="shareOnWhatsApp()" title="Partager sur WhatsApp">💬</button>
             <button class="btn-share-social btn-facebook" onclick="shareOnFacebook()" title="Partager sur Facebook">f</button>
@@ -1317,75 +1378,76 @@
     <!-- ===== FAQ SECTION ===== -->
     <section class="faq">
         <h2 class="section-title">Questions Fréquentes</h2>
+        <p class="section-subtitle">Tout ce que tu dois savoir sur 1xBet</p>
         <div class="faq-container">
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>Comment télécharger l'app ?</span>
+                    <span>Comment obtenir les 500 FCFA gratuits?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Clique sur le bouton "Télécharger Maintenant" en haut de la page. L'app se téléchargera automatiquement sur ton appareil. Ensuite, installe-la et crée ton compte avec le code promo <strong>1x_4244948</strong>.
+                        C'est simple! Clique sur "Obtenir 500 FCFA Maintenant", crée ton compte avec un numéro de téléphone valide, et utilise le code promo <strong>1x_4244948</strong>. Les 500 FCFA seront crédités automatiquement dans les 2 minutes. Aucun dépôt requis!
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>Le bonus est-il automatique ?</span>
+                    <span>Le bonus 500% est-il automatique?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Oui ! Le bonus de 500% s'ajoute automatiquement lors de ton premier dépôt. Utilise le code promo <strong>1x_4244948</strong> pour déverrouiller le bonus maximum.
+                        Oui! Le bonus de 500% s'ajoute automatiquement lors de ton premier dépôt. Le code promo <strong>1x_4244948</strong> déverrouille le bonus maximum. C'est vraiment automatique et instantané.
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>L'app est-elle légale en Côte d'Ivoire ?</span>
+                    <span>Est-ce légal dans mon pays?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Oui, 1xBet est une plateforme internationale reconnue et régulée. Elle opère légalement et offre une expérience sécurisée aux utilisateurs ivoiriens.
+                        1xBet opère légalement dans 195+ pays avec des licences internationales reconnues. Nous respectons les lois locales de chaque région. Vérifie simplement les conditions de ton pays avant de t'inscrire.
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>Comment retirer mes gains ?</span>
+                    <span>Comment retirer mes gains?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Accède à la section "Retrait" dans ton compte. Choisis ta méthode préférée (virement bancaire, portefeuille mobile, etc.) et suis les instructions. Les retraits sont traités en 24-48h.
+                        Accède à "Retrait" dans ton compte, choisis ta méthode (virement bancaire, portefeuille mobile, crypto, etc.) et suis les instructions. Les retraits sont traités en 24-48h maximum. Pas de frais cachés!
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>Quel est le montant minimum pour parier ?</span>
+                    <span>Quel est le montant minimum pour parier?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Le montant minimum dépend du type de pari, mais généralement c'est à partir de 100 XOF. Consulte les conditions spécifiques dans l'app pour plus de détails.
+                        Le minimum dépend du type de pari, mais généralement c'est à partir de 50 FCFA. Avec tes 500 FCFA gratuits, tu peux faire 10 paris! Consulte les conditions spécifiques dans l'app pour chaque type de pari.
                     </div>
                 </div>
             </div>
 
             <div class="accordion">
                 <div class="accordion-header" onclick="toggleAccordion(this)">
-                    <span>Puis-je jouer sur plusieurs appareils ?</span>
+                    <span>Puis-je jouer sur plusieurs appareils?</span>
                     <span class="accordion-icon">▼</span>
                 </div>
                 <div class="accordion-content">
                     <div class="accordion-text">
-                        Oui ! Connecte-toi avec le même compte sur tous tes appareils (téléphone, tablette, ordinateur). Tes données et solde se synchronisent automatiquement.
+                        Oui! Connecte-toi avec le même compte sur téléphone, tablette et ordinateur. Tes données, solde et historique se synchronisent automatiquement en temps réel sur tous tes appareils.
                     </div>
                 </div>
             </div>
@@ -1398,43 +1460,70 @@
             <div class="footer-links">
                 <a href="#conditions">Conditions d'utilisation</a>
                 <a href="#privacy">Politique de confidentialité</a>
-                <a href="#responsible">Jeu responsable</a>
-                <a href="#contact">Nous contacter</a>
+                <a href="#responsible">Jeu Responsable</a>
+                <a href="#contact">Support 24/7</a>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 1xBet Côte d'Ivoire. Tous droits réservés. | Dernière mise à jour: Mars 2026</p>
-                <p>⚠️ Jeu responsable - Joue avec modération. 18+ uniquement.</p>
+                <p>© 2026 1xBet Global. Tous droits réservés. | Opérant dans 195+ pays</p>
+                <p>⚠️ Jeu responsable - Joue avec modération. 18+ uniquement. Les gains ne sont pas garantis.</p>
             </div>
         </div>
     </footer>
 
     <!-- ===== FLOATING CTA ===== -->
     <div class="floating-cta" onclick="window.open('https://refpa14435.com/L?tag=d_5215619m_4129c_&site=5215619&ad=4129', '_blank')">
-        Télécharger
+        Obtenir 500 FCFA
     </div>
 
     <!-- ===== JAVASCRIPT ===== -->
     <script>
+        // ===== COUNTDOWN TIMER =====
+        function startCountdown() {
+            const timerElement = document.getElementById('timer');
+            let hours = 24;
+            let minutes = 0;
+            let seconds = 0;
+
+            setInterval(() => {
+                if (seconds > 0) {
+                    seconds--;
+                } else if (minutes > 0) {
+                    minutes--;
+                    seconds = 59;
+                } else if (hours > 0) {
+                    hours--;
+                    minutes = 59;
+                    seconds = 59;
+                } else {
+                    hours = 24;
+                    minutes = 0;
+                    seconds = 0;
+                }
+
+                timerElement.textContent = 
+                    String(hours).padStart(2, '0') + ':' +
+                    String(minutes).padStart(2, '0') + ':' +
+                    String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+
         // ===== COPY PROMO CODE =====
         function copyPromoCode() {
             const promoInput = document.getElementById('promoCode');
             promoInput.select();
             document.execCommand('copy');
 
-            // Visual feedback
             const copyBtn = document.getElementById('copyBtn');
-            copyBtn.textContent = '✓ Copié !';
+            copyBtn.textContent = '✓ Copié!';
             copyBtn.classList.add('copied');
 
-            // Show notification
-            showNotification('Code promo copié avec succès !');
+            showNotification('Code promo copié avec succès!');
 
             setTimeout(() => {
                 copyBtn.textContent = 'Copier';
                 copyBtn.classList.remove('copied');
             }, 2000);
 
-            // Track event
             gtag('event', 'copy_promo_code', {
                 'promo_code': '1x_4244948'
             });
@@ -1457,7 +1546,6 @@
             const accordion = header.parentElement;
             accordion.classList.toggle('active');
 
-            // Close other accordions
             document.querySelectorAll('.accordion').forEach(acc => {
                 if (acc !== accordion) {
                     acc.classList.remove('active');
@@ -1469,8 +1557,8 @@
         function shareApp() {
             if (navigator.share) {
                 navigator.share({
-                    title: 'Télécharge 1xBet',
-                    text: 'Bonus 500% + 50% cashback avec le code promo 1x_4244948',
+                    title: '1xBet - 500 FCFA Gratuit',
+                    text: 'Gagne 500 FCFA sans dépôt + 500% de bonus! Code: 1x_4244948',
                     url: window.location.href
                 });
             } else {
@@ -1479,7 +1567,7 @@
         }
 
         function shareOnWhatsApp() {
-            const text = "🎁 Découvre 1xBet avec un bonus de 500% + 50% cashback ! Code promo: 1x_4244948 📱";
+            const text = "🎁 DÉCOUVRE 1xBet! Reçois 500 FCFA GRATUIT sans dépôt + 500% bonus! Code promo: 1x_4244948 📱 Offre limitée 24h!";
             const url = `https://wa.me/?text=${encodeURIComponent(text + ' ' + window.location.href)}`;
             window.open(url, '_blank');
             gtag('event', 'share', { 'method': 'whatsapp' });
@@ -1492,7 +1580,7 @@
         }
 
         function shareOnMessenger() {
-            const text = "🎁 Bonus 1xBet 500% + 50% cashback ! Code: 1x_4244948";
+            const text = "🎁 1xBet: 500 FCFA gratuit! Code: 1x_4244948";
             const url = `https://www.facebook.com/dialog/send?app_id=YOUR_APP_ID&link=${encodeURIComponent(window.location.href)}&redirect_uri=${encodeURIComponent(window.location.href)}`;
             window.open(url, '_blank');
             gtag('event', 'share', { 'method': 'messenger' });
@@ -1501,17 +1589,17 @@
         // ===== DYNAMIC DOWNLOAD COUNTER =====
         function updateDownloadCounter() {
             const counter = document.getElementById('downloadCounter');
-            const baseNumber = 2500000;
-            const randomIncrease = Math.floor(Math.random() * 50000);
+            const baseNumber = 5200000;
+            const randomIncrease = Math.floor(Math.random() * 100000);
             const total = baseNumber + randomIncrease;
             counter.textContent = (total / 1000000).toFixed(1) + 'M+';
         }
 
-        setInterval(updateDownloadCounter, 5000);
+        setInterval(updateDownloadCounter, 8000);
 
         // ===== TRACK PAGE VIEWS =====
         gtag('event', 'page_view', {
-            'page_title': '1xBet Côte d\'Ivoire',
+            'page_title': '1xBet Global',
             'page_path': window.location.pathname
         });
 
@@ -1541,6 +1629,7 @@
             if (firstAccordion) {
                 firstAccordion.classList.add('active');
             }
+            startCountdown();
         });
     </script>
 </body>
